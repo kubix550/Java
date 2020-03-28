@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fb966b0-c5fc-4f45-9d22-2ef3b0ee5769" name="Default Changelist" comment="" />
+    <list default="true" id="6fb966b0-c5fc-4f45-9d22-2ef3b0ee5769" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/target/classes/Alien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Kalkulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LosowaPrzedzial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LosowaSiodemki.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lotto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/projekt.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WejscieKlawiatura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bookList/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bookList/BookSorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bookList/SortPages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bookList/SortPrice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bookList/SortTitle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyDrugie/CiagWspak.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyDrugie/CoTrzeciZnak.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyDrugie/CzyIstniejeTrojkat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyDrugie/CzyLiczbaPierwsza.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyDrugie/CzyOsobaPelnoletnia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyDrugie/CzyPodzielnaPzezCztery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyDrugie/CzyToPalindrom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyDrugie/NaturalneDoStu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyDrugie/OstatniaLiteraCiagu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyDrugie/RzeczywistaNaCalkowita.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyDrugie/SumaCyfrLiczby.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyDrugie/TablicaObliczWyznacznik.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyDrugie/WpisywanieHasla.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyPierwsze/CoCzwartaDwucyfrowa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyPierwsze/CoDrugiZnak.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyPierwsze/CzyImieZenskie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyPierwsze/CzyLiczbaRowna.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyPierwsze/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyPierwsze/LiczbyDoTablicy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyPierwsze/PodzielnePrzezTrzy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyPierwsze/StopNaZero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyPierwsze/SumaLiczb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyPierwsze/SumaWczytanychLiczb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/klasyPierwsze/TrojkatProstok.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +54,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -25,6 +65,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1YTgXU85Lwy6NEvyyC6Y8WzHZ2B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -134,22 +175,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="441" y="246" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1584726419107" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1585396706729">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1585397817956">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585396706729" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1585396706729">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585397817956" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1585397817956">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585396706729" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1585396706729">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585397817956" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1585397817956">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585396706729" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1585396706729">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585397817956" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1585397817956">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585396706729" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585397817956" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1584726450514">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
