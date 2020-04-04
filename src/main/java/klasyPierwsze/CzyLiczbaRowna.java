@@ -9,7 +9,7 @@ public class CzyLiczbaRowna {
         Scanner input = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\b\b\b\b\b");                           //da sie to jakos ładniej?
+            System.out.println();
             System.out.println("Wpisz liczbe");
             numer = input.nextInt();
 

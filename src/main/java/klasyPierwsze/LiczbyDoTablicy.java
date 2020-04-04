@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class LiczbyDoTablicy {
     public static void main(String[] args) {
-        int liczba = 0;                                 //?
+        int liczba = 0;
         int[] tablica = new int[5];
         Scanner input = new Scanner(System.in);
 

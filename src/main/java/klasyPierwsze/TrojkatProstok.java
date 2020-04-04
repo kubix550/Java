@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class TrojkatProstok {
     public static boolean czyprost(int a, int b, int c) {
-        return ((a * a) + (b * b) == (c * c) || (b * b) + (c * c) == (a * a) || (a * a) + (c * c) == (b * b)); //bo moze byc true/false
+        return ((a * a) + (b * b) == (c * c) || (b * b) + (c * c) == (a * a) || (a * a) + (c * c) == (b * b)); //moze byc true/false bo boolean
     }
 
     public static void main(String[] args) {

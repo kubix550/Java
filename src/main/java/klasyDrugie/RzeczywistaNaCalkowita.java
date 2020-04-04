@@ -10,8 +10,7 @@ public class RzeczywistaNaCalkowita {
 
         while (true) {
             System.out.println("Wpisz liczbe rzeczywista");
-            liczbaRzeczywista = input.nextDouble();             //dlaczego wywala jak wpisac np 5.5 ?
-                                                                // bo sie wpisuje z przecinkiem
+            liczbaRzeczywista = input.nextDouble();
 
             System.out.println("Liczba rzeczywista " + liczbaRzeczywista + " to " + (int)liczbaRzeczywista + " jako liczba calkowita");
         }

@@ -18,7 +18,7 @@ public class Kalkulator {
             c = a/b;
         }
         catch (ArithmeticException obiekt) {                            //obsluguje wyjatek jesli bedzie taki przypadek
-            System.out.println("Dzielenie przez 0");                    //ArithmeticException to konkretny typ, wziety z konsoli
+            System.out.println("Dzielenie przez 0");                    //ArithmeticException to konkretny wyjatek, wziety z konsoli
         }
         return c;
     }

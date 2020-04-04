@@ -18,8 +18,6 @@ public class CiagWspak {
             System.out.println("Ciag znakow odwrotnie to: " + builder); // tostring jest domyslnie w metodzie println
 
             // buffer do wielowatkowych ale lepiej builder
-
-
         }
     }
 }

@@ -10,7 +10,7 @@ public class CzyLiczbaPierwsza {
         for (int i = 2; i < a ; i++) {                  //od 2 do a-1
             if (a%i == 0) {                             //sprawdza czy sie dzieli przez cos innego
                 pierwsza = false;
-                break;                                  //jak wyjdzie liczba to nie ma co dalej
+                break;                                  //jak wyjdzie liczba to koniec
             }
         }
 

@@ -22,7 +22,6 @@ public class CzyOsobaPelnoletnia {
                 System.out.println("Osoba nie jest pelnoletnia");
                 System.out.println();
             }
-
         }
     }
 }

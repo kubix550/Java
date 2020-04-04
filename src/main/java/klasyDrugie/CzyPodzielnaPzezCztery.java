@@ -9,18 +9,18 @@ public class CzyPodzielnaPzezCztery {
         Scanner input = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\b\b\b\b\b");
+            System.out.println();
             System.out.println("Wpisz liczbe");
             liczba = input.nextInt();
 
             if (liczba%4 == 0) {
                 System.out.println("Liczba jest podzielna przez 4");
-                System.out.println("\b\b\b\b\b");
+                System.out.println();
             }
 
             else {
                 System.out.println("Liczba nie jest podzielna przez 4");
-                System.out.println("\b\b\b\b\b");
+                System.out.println();
             }
 
         }

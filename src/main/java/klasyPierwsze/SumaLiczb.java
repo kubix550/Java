@@ -3,10 +3,9 @@ package klasyPierwsze;
 
 public class SumaLiczb {
     public static void main(String[] args) {
-        int a=10; //deklaracja z def
+        int a=10; //deklaracja z definicja
         int b=-2;
 
         System.out.println("razem "+(a+b));
-        //pycharm
     }
 }

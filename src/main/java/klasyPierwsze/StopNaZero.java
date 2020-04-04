@@ -15,7 +15,7 @@ public class StopNaZero {
         do {
             System.out.println("Wpisz liczbe");
             numer = input.nextInt();
-            suma = suma+numer;                              // nowa wartosc sumy to suma+numer !
+            suma = suma+numer;                              // nowa wartosc sumy to suma+numer
         }
 
         while (numer!=0);                                    //kazda liczba inna niz zero nie spowoduje konca programu

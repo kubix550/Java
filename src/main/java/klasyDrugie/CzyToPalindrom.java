@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class CzyToPalindrom {
     public static void main(String[] args) {
-        String string; //to co uzytkownik
-        String odwrotny; //odwroc string
+        String string;                          //to co uzytkownik wpisze
+        String odwrotny;                        //odwrocony string
         Scanner input = new Scanner(System.in);
 
         System.out.println("Wpisz tekst");

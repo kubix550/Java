@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class WejscieKlawiatura {
     public static void main(String[] args) {
-        //File plik=new File("sciezka pliku");
+        //File plik=new File("sciezka pliku");          //zeby wprowadzic z pliku
         Scanner scanner = new Scanner(System.in);
         String imie = scanner.nextLine();
         System.out.println("witaj " + imie);

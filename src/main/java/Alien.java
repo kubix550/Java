@@ -109,8 +109,3 @@ public class Alien {
         }
     }
 }
-
-//to wszystko idzie po kolei wiec wynik koncowy nie wyglada za ładnie
-// zadanie z lista ksiazek
-//odc java 021
-// odc n01 nauk javy
