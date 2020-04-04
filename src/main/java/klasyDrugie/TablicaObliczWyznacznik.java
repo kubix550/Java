@@ -49,15 +49,22 @@ public class TablicaObliczWyznacznik {
         System.out.println("wyznacznik wy to "  + wy);
         System.out.println();
 
-        double x = wx/w;
-        double y = wy/w;
+        //sprawdzenie czy sprzeczny oznaczony nieoznaczony
+        if (w != 0) {
+            double x = wx/w;
+            double y = wy/w;
 
-        System.out.println("rozwiazanie x to " +  x);
-        System.out.println("rozwiazanie y to " + y);
+            System.out.println("rozwiazanie x to " +  x);
+            System.out.println("rozwiazanie y to " + y);
+            System.out.println("Uklad oznaczony, jedno rozwiazanie");
+        }
 
+        else if (w == 0 && wx == 0 && wy == 0) {
+            System.out.println("Uklad nieoznaczony, nieskonczenie wiele rozwiazan");
+        }
 
-        //oblicz wyznaczniki w wx wy, sprawdzic czy sprzeczny oznaczony nieoznaczony jak to sprawdzic?
+        else if (w == 0 && (wx != 0 || wy != 0)) {
+            System.out.println("Uklad sprzeczny, brak rozwiazan");
+        }
     }
-
-
 }

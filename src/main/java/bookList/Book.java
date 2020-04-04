@@ -5,8 +5,8 @@ package bookList;
 //   2)Napisz komparatory do sortowania ksiązek po ilości stron oraz po cenie i tytule.
 //   3)Napisz klasę testującą cały program.
 
-public class Book implements Comparable<Book> {                     // interfejs mowi co klasa ma robic        W ZEWN JEST COMPARATOR I COMPARE
-
+public class Book // implements Comparable<Book> {   interfejs mowi co klasa ma robic W ZEWN JEST COMPARATOR I COMPARE
+{
     private String title;
     private String author;
     private int pageCount;
@@ -62,19 +62,22 @@ public class Book implements Comparable<Book> {                     // interfejs
     public void setPrice(int price) {
         if (price > 0) this.price = price;
     }
-
-
-    // tutaj mowi o co chodzi z sortowaniem
-    @Override
-    public int compareTo(Book book) {                           //0 - identyczne, -1 ksiazka jako parametr jest wieksza, +1 jest mniejsza (jako cena)
-        return this.getTitle().compareTo(book.getTitle());      //brak if bo sie porownuje od razu, cena musiala miec if bo byl int
-    }
 }
 
-//zrobic sortowania zewnetrzne klasy sortujace po czyms innym bylo w filmie
 
-//        if (this.getPrice() == book.getPrice()) {
-//            return 0;
+
+//SORTOWANIE WEWNATRZ, PO TYTULE
+//    @Override                                                  // jak to usunac to sie kod rozsypie wiec lepiej nie
+//    public int compareTo(Book book) {
+//        return this.getTitle().compareTo(book.getTitle());
+//    }
+//}
+
+
+//SORTOWANIE WEWNATRZ, PO CENIE, DLUZSZY KOD
+
+//        if (this.getPrice() == book.getPrice()) {                 //0 - identyczne, -1 ksiazka jako parametr jest wieksza, +1 jest mniejsza (jako cena)
+//            return 0;                                             //brak if bo sie porownuje od razu, cena musiala miec if bo byl int
 //        }
 //
 //        else if (this.getPrice() < book.getPrice()) {
