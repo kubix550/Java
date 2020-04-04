@@ -28,6 +28,7 @@ public class BookSorting {
 //        System.out.println(ksiazka1.compareTo(ksiazka2));   //metoda compareTo, this to ksiazka1 a ksiazka2 to book, mozna to ifem porownac
 //        Collections.sort(bookList);                         //collections to kolekcja mozna uzyc w arraylist, sort sortuje kolekcje, WIEC JAK SIE wpisze to bedzie posortowane bez odwrotu
 //        System.out.println(bookList);                       //trzeba uzyc zewn komparatorow zeby posortowac po innuchj parametrach
+// todo zamienic na switcha w booksorting
 
         Scanner input = new Scanner(System.in);
         String sortingType;
