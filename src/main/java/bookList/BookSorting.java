@@ -25,11 +25,6 @@ public class BookSorting {
         bookList.add(ksiazka6);
         bookList.add(ksiazka7);
 
-//        System.out.println(ksiazka1.compareTo(ksiazka2));   //metoda compareTo, this to ksiazka1 a ksiazka2 to book, mozna to ifem porownac
-//        Collections.sort(bookList);                         //collections to kolekcja mozna uzyc w arraylist, sort sortuje kolekcje, WIEC JAK SIE wpisze to bedzie posortowane bez odwrotu
-//        System.out.println(bookList);                       //trzeba uzyc zewn komparatorow zeby posortowac po innuchj parametrach
-// todo zamienic na switcha w booksorting
-
         Scanner input = new Scanner(System.in);
         String sortingType;
         String sortingOrder;
@@ -38,91 +33,113 @@ public class BookSorting {
             System.out.println("Wybierz typ sortowania: autor, tytul, cena, strony");
             sortingType = input.nextLine();
 
-            //SORTOWANIE AUTORA ZEWNETRZNY KOMPARATOR
-            if (sortingType.equals("autor")) {
-                System.out.println("Wybierz kolejnosc sortowania: AZ, ZA");
-                sortingOrder = input.nextLine();
+            switch (sortingType) {
 
-                if (sortingOrder.equals("AZ")) {
-                    Collections.sort(bookList, new SortAuthor());
-                    System.out.println(bookList);
-                }
-                else if (sortingOrder.equals("ZA")) {
-                    Collections.sort(bookList, new SortAuthor());
-                    Collections.reverse(bookList);
-                    System.out.println(bookList);
-                }
+                //SORTOWANIE AUTORA ZEWNETRZNY KOMPARATOR
+                case "autor":{                                                      //znajduje pasujace przypadki i wyswietla wszystko po kolei dalej, chyba ze napotka break
+                    System.out.println("Wybierz kolejnosc sortowania: AZ, ZA");
+                    sortingOrder = input.nextLine();
 
-                else {
-                    System.out.println("Nieznana kolejnosc sortowania");
-                }
-            }
-
-            //SORTOWANIE TYTULU, ZEWNETRZNY KOMPARATOR
-            else if (sortingType.equals("tytul")) {
-                System.out.println("Wybierz kolejnosc sortowania: AZ, ZA");
-                sortingOrder = input.nextLine();
-
-                if (sortingOrder.equals("AZ")) {
-                    Collections.sort(bookList, new SortTitle());
-                    System.out.println(bookList);
+                    switch (sortingOrder) {
+                        case "AZ":{
+                            Collections.sort(bookList, new SortAuthor());
+                            System.out.println(bookList);
+                            break;
+                        }
+                        case "ZA":{
+                            Collections.sort(bookList, new SortAuthor());
+                            Collections.reverse(bookList);
+                            System.out.println(bookList);
+                            break;
+                        }
+                        default:{
+                            System.out.println("Nieznana kolejnosc sortowania");
+                            break;
+                        }
+                    }
+                    break;
                 }
 
-                else if (sortingOrder.equals("ZA")) {
-                    Collections.sort(bookList, new SortTitle());
-                    Collections.reverse(bookList);
-                    System.out.println(bookList);
+                //SORTOWANIE TYTULU, ZEWNETRZNY KOMPARATOR
+                case "tytul":{
+                    System.out.println("Wybierz kolejnosc sortowania: AZ, ZA");
+                    sortingOrder = input.nextLine();
+
+                    switch (sortingOrder) {
+                        case "AZ":{
+                            Collections.sort(bookList, new SortTitle());
+                            System.out.println(bookList);
+                            break;
+                        }
+                        case "ZA":{
+                            Collections.sort(bookList, new SortTitle());
+                            Collections.reverse(bookList);
+                            System.out.println(bookList);
+                            break;
+                        }
+                        default:{
+                            System.out.println("Nieznana kolejnosc sortowania");
+                            break;
+                        }
+                    }
+                    break;
                 }
 
-                else {
-                    System.out.println("Nieznana kolejnosc sortowania");
-                }
-            }
+                //SORTOWANIE STRON, ZEWNETRZNY KOMPARATOR
+                case "strony":{
+                    System.out.println("Wybierz kolejnosc sortowania: rosnaco, malejaco");
+                    sortingOrder = input.nextLine();
 
-            //SORTOWANIE CENY, ZEWNETRZNY KOMPARATOR
-            else if (sortingType.equals("cena")) {
-                System.out.println("Wybierz kolejnosc sortowania: rosnaco, malejaco");
-                sortingOrder = input.nextLine();
-
-                if (sortingOrder.equals("rosnaco")) {
-                    Collections.sort(bookList, new SortPrice());
-                    System.out.println(bookList);
-                }
-
-                else if (sortingOrder.equals("malejaco")) {
-                    Collections.sort(bookList, new SortPrice());
-                    Collections.reverse(bookList);
-                    System.out.println(bookList);
-                }
-
-                else {
-                    System.out.println("Nieznana kolejnosc sortowania");
-                }
-            }
-
-            //SORTOWANIE STRON, ZEWNETRZNY KOMPARATOR
-            else if (sortingType.equals("strony")) {
-                System.out.println("Wybierz kolejnosc sortowania: rosnaco, malejaco");
-                sortingOrder = input.nextLine();
-
-                if (sortingOrder.equals("rosnaco")) {
-                    Collections.sort(bookList, new SortPages());
-                    System.out.println(bookList);
+                    switch (sortingOrder) {
+                        case "rosnaco":{
+                            Collections.sort(bookList, new SortPages());
+                            System.out.println(bookList);
+                            break;
+                        }
+                        case "malejaco":{
+                            Collections.sort(bookList, new SortPages());
+                            Collections.reverse(bookList);
+                            System.out.println(bookList);
+                            break;
+                        }
+                        default:{
+                            System.out.println("Nieznana kolejnosc sortowania");
+                            break;
+                        }
+                    }
+                    break;
                 }
 
-                else if (sortingOrder.equals("malejaco")) {
-                    Collections.sort(bookList, new SortPages());
-                    Collections.reverse(bookList);
-                    System.out.println(bookList);
+                //SORTOWANIE CENY, ZEWNETRZNY KOMPARATOR
+                case "cena":{
+                    System.out.println("Wybierz kolejnosc sortowania: rosnaco, malejaco");
+                    sortingOrder = input.nextLine();
+
+                    switch (sortingOrder) {
+                        case "rosnaco":{
+                            Collections.sort(bookList, new SortPrice());
+                            System.out.println(bookList);
+                            break;
+                        }
+                        case "malejaco":{
+                            Collections.sort(bookList, new SortPrice());
+                            Collections.reverse(bookList);
+                            System.out.println(bookList);
+                            break;
+                        }
+                        default:{
+                            System.out.println("Nieznana kolejnosc sortowania");
+                            break;
+                        }
+                    }
+                    break;
                 }
 
-                else {
-                    System.out.println("Nieznana kolejnosc sortowania");
-                }
-            }
-
-            else {
+                //INNY PRZYPADEK
+                default:{
                 System.out.println("Nieznany typ sortowania");
+                    break;
+                }
             }
         }
     }

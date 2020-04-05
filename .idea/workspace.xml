@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fb966b0-c5fc-4f45-9d22-2ef3b0ee5769" name="Default Changelist" comment="file refactor">
+    <list default="true" id="6fb966b0-c5fc-4f45-9d22-2ef3b0ee5769" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Alien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Alien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kalkulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kalkulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LosowaPrzedzial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LosowaPrzedzial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WejscieKlawiatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WejscieKlawiatura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/klasyDrugie/CiagWspak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/klasyDrugie/CiagWspak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/klasyDrugie/CzyLiczbaPierwsza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/klasyDrugie/CzyLiczbaPierwsza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/klasyDrugie/CzyOsobaPelnoletnia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/klasyDrugie/CzyOsobaPelnoletnia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/klasyDrugie/CzyPodzielnaPzezCztery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/klasyDrugie/CzyPodzielnaPzezCztery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/klasyDrugie/CzyToPalindrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/klasyDrugie/CzyToPalindrom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/klasyDrugie/RzeczywistaNaCalkowita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/klasyDrugie/RzeczywistaNaCalkowita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/klasyPierwsze/CoDrugiZnak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/klasyPierwsze/CoDrugiZnak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/klasyPierwsze/CzyLiczbaRowna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/klasyPierwsze/CzyLiczbaRowna.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/klasyPierwsze/LiczbyDoTablicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/klasyPierwsze/LiczbyDoTablicy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/klasyPierwsze/StopNaZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/klasyPierwsze/StopNaZero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/klasyPierwsze/SumaLiczb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/klasyPierwsze/SumaLiczb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/klasyPierwsze/TrojkatProstok.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/klasyPierwsze/TrojkatProstok.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bookList/BookSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bookList/BookSorting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +46,7 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
-  <component name="RunManager" selected="Application.LosowaSiodemki">
+  <component name="RunManager" selected="Application.BookSorting">
     <configuration name="BookSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bookList.BookSorting" />
       <module name="projekt" />
@@ -117,10 +102,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BookSorting" />
+        <item itemvalue="Application.BookSorting2" />
         <item itemvalue="Application.LosowaSiodemki" />
         <item itemvalue="Application.LosowaPrzedzial" />
-        <item itemvalue="Application.BookSorting2" />
-        <item itemvalue="Application.BookSorting" />
         <item itemvalue="Application.TablicaObliczWyznacznik" />
       </list>
     </recent_temporary>
@@ -143,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585995707813</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="file refactor">
+      <created>1586001101417</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586001101417</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,38 +155,42 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="441" y="246" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1584726419107" />
-    <state x="337" y="0" width="863" height="768" key="CommitChangelistDialog2" timestamp="1586001045086">
+    <state x="337" y="0" width="863" height="768" key="CommitChangelistDialog2" timestamp="1586001100470">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="337" y="0" width="863" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586001045086" />
+    <state x="337" y="0" width="863" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586001100470" />
     <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1585998023852">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1585998023852" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1586000733948">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1586106988218">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586000733948" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1586000733948">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586106988218" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1586106988218">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1586000733948" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1586000733948">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1586106988218" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1586106988218">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1586000733948" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1586000733948">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1586106988218" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1586106988218">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1586000733948" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1586106988218" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1584726450514">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1584726450514" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1585993685256">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1586001129245">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1585993685256" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1586001129245" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1586105356301">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1586105356301" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1584269554394">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
