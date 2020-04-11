@@ -1,3 +1,4 @@
+package klasyDrugie;
 // 20.Napisz program TOTOLOTEK, który losuje 6 liczb z przedziału <1,49> Liczby nie mogą sie powtarzać.
 
 import java.util.*;

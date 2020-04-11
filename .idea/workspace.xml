@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fb966b0-c5fc-4f45-9d22-2ef3b0ee5769" name="Default Changelist" comment="">
+    <list default="true" id="6fb966b0-c5fc-4f45-9d22-2ef3b0ee5769" name="Default Changelist" comment="added new classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bookList/BookSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bookList/BookSorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lotto.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
-  <component name="RunManager" selected="Application.BookSorting">
+  <component name="RunManager" selected="Application.Tablica3x3">
     <configuration name="BookSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bookList.BookSorting" />
       <module name="projekt" />
@@ -73,22 +73,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LosowaPrzedzial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LosowaPrzedzial" />
+    <configuration name="IleDzielnikow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="klasyDrugie.IleDzielnikow" />
       <module name="projekt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="klasyDrugie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LosowaSiodemki" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LosowaSiodemki" />
+    <configuration name="Potegowanie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="klasyDrugie.Potegowanie" />
       <module name="projekt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="klasyDrugie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TablicaObliczWyznacznik" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="klasyDrugie.TablicaObliczWyznacznik" />
+    <configuration name="Tablica3x3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="klasyDrugie.Tablica3x3" />
       <module name="projekt" />
       <extension name="coverage">
         <pattern>
@@ -102,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Tablica3x3" />
+        <item itemvalue="Application.IleDzielnikow" />
+        <item itemvalue="Application.Potegowanie" />
         <item itemvalue="Application.BookSorting" />
         <item itemvalue="Application.BookSorting2" />
-        <item itemvalue="Application.LosowaSiodemki" />
-        <item itemvalue="Application.LosowaPrzedzial" />
-        <item itemvalue="Application.TablicaObliczWyznacznik" />
       </list>
     </recent_temporary>
   </component>
@@ -135,12 +147,20 @@
       <option name="project" value="LOCAL" />
       <updated>1586001101417</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changed if statement to switch">
+      <created>1586107404624</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586107404624</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="file refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="file refactor" />
+    <MESSAGE value="changed if statement to switch" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed if statement to switch" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="139" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1584726335363">
@@ -151,46 +171,50 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="488" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1585940827847" />
+    <state x="479" y="243" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586603349348">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="479" y="243" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.768@0.0.1366.768" timestamp="1586603349348" />
     <state x="441" y="246" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584726419107">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="441" y="246" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1584726419107" />
-    <state x="337" y="0" width="863" height="768" key="CommitChangelistDialog2" timestamp="1586001100470">
+    <state x="297" y="0" width="863" height="768" key="CommitChangelistDialog2" timestamp="1586604721895">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="337" y="0" width="863" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586001100470" />
+    <state x="297" y="0" width="863" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586604721895" />
     <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1585998023852">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1585998023852" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1586106988218">
+    <state width="1323" height="188" key="GridCell.Tab.0.bottom" timestamp="1586604679148">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586106988218" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1586106988218">
+    <state width="1323" height="188" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586604679148" />
+    <state width="1323" height="188" key="GridCell.Tab.0.center" timestamp="1586604679148">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1586106988218" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1586106988218">
+    <state width="1323" height="188" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1586604679148" />
+    <state width="1323" height="188" key="GridCell.Tab.0.left" timestamp="1586604679148">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1586106988218" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1586106988218">
+    <state width="1323" height="188" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1586604679148" />
+    <state width="1323" height="188" key="GridCell.Tab.0.right" timestamp="1586604679148">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1586106988218" />
+    <state width="1323" height="188" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1586604679148" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1584726450514">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1584726450514" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1586001129245">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1586107424008">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1586001129245" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1586105356301">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1586107424008" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1586598435339">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1586105356301" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1586598435339" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1584269554394">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
