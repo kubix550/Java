@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fb966b0-c5fc-4f45-9d22-2ef3b0ee5769" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/klasyDrugie/Tablica3x3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/klasyDrugie/Tablica3x3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,14 +160,33 @@
       <option name="project" value="LOCAL" />
       <updated>1586604846803</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finished todo">
+      <created>1587209128569</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587209128569</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="file refactor" />
     <MESSAGE value="changed if statement to switch" />
     <MESSAGE value="added new classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new classes" />
+    <MESSAGE value="finished todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished todo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="139" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1584726335363">
@@ -188,30 +205,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="441" y="246" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1584726419107" />
-    <state x="297" y="0" width="863" height="768" key="CommitChangelistDialog2" timestamp="1586604845656">
+    <state x="297" y="0" width="863" height="768" key="CommitChangelistDialog2" timestamp="1587209127642">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="297" y="0" width="863" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586604845656" />
+    <state x="297" y="0" width="863" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1587209127642" />
     <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1585998023852">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1585998023852" />
-    <state width="1323" height="188" key="GridCell.Tab.0.bottom" timestamp="1587208950525">
+    <state width="1323" height="188" key="GridCell.Tab.0.bottom" timestamp="1587209130687">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1587208950525" />
-    <state width="1323" height="188" key="GridCell.Tab.0.center" timestamp="1587208950525">
+    <state width="1323" height="188" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1587209130687" />
+    <state width="1323" height="188" key="GridCell.Tab.0.center" timestamp="1587209130687">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1587208950525" />
-    <state width="1323" height="188" key="GridCell.Tab.0.left" timestamp="1587208950525">
+    <state width="1323" height="188" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1587209130687" />
+    <state width="1323" height="188" key="GridCell.Tab.0.left" timestamp="1587209130687">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1587208950525" />
-    <state width="1323" height="188" key="GridCell.Tab.0.right" timestamp="1587208950525">
+    <state width="1323" height="188" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1587209130687" />
+    <state width="1323" height="188" key="GridCell.Tab.0.right" timestamp="1587209130687">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1587208950525" />
+    <state width="1323" height="188" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1587209130687" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1584726450514">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
