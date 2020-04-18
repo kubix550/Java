@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fb966b0-c5fc-4f45-9d22-2ef3b0ee5769" name="Default Changelist" comment="added new classes">
+    <list default="true" id="6fb966b0-c5fc-4f45-9d22-2ef3b0ee5769" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lotto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/klasyDrugie/Tablica3x3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/klasyDrugie/Tablica3x3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,48 +47,9 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
-  <component name="RunManager" selected="Application.Tablica3x3">
-    <configuration name="BookSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bookList.BookSorting" />
-      <module name="projekt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bookList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookSorting2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bookList.BookSorting2" />
-      <module name="projekt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bookList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IleDzielnikow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="klasyDrugie.IleDzielnikow" />
-      <module name="projekt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="klasyDrugie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Potegowanie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="klasyDrugie.Potegowanie" />
+  <component name="RunManager" selected="Application.TablicaMinMax">
+    <configuration name="IloscWystapienLiczby" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="klasyDrugie.IloscWystapienLiczby" />
       <module name="projekt" />
       <extension name="coverage">
         <pattern>
@@ -112,13 +74,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TablicaMinMax" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="klasyDrugie.TablicaMinMax" />
+      <module name="projekt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="klasyDrugie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TablicaObliczWyznacznik" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="klasyDrugie.TablicaObliczWyznacznik" />
+      <module name="projekt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="klasyDrugie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TablicaOdwrotnaKolejnosc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="klasyDrugie.TablicaOdwrotnaKolejnosc" />
+      <module name="projekt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="klasyDrugie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TablicaMinMax" />
+        <item itemvalue="Application.IloscWystapienLiczby" />
+        <item itemvalue="Application.TablicaOdwrotnaKolejnosc" />
         <item itemvalue="Application.Tablica3x3" />
-        <item itemvalue="Application.IleDzielnikow" />
-        <item itemvalue="Application.Potegowanie" />
-        <item itemvalue="Application.BookSorting" />
-        <item itemvalue="Application.BookSorting2" />
+        <item itemvalue="Application.TablicaObliczWyznacznik" />
       </list>
     </recent_temporary>
   </component>
@@ -154,13 +155,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586107404624</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added new classes">
+      <created>1586604846803</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586604846803</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="file refactor" />
     <MESSAGE value="changed if statement to switch" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed if statement to switch" />
+    <MESSAGE value="added new classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new classes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="139" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1584726335363">
@@ -179,42 +188,42 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="441" y="246" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1584726419107" />
-    <state x="297" y="0" width="863" height="768" key="CommitChangelistDialog2" timestamp="1586604721895">
+    <state x="297" y="0" width="863" height="768" key="CommitChangelistDialog2" timestamp="1586604845656">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="297" y="0" width="863" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586604721895" />
+    <state x="297" y="0" width="863" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586604845656" />
     <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1585998023852">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1585998023852" />
-    <state width="1323" height="188" key="GridCell.Tab.0.bottom" timestamp="1586604679148">
+    <state width="1323" height="188" key="GridCell.Tab.0.bottom" timestamp="1587208950525">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586604679148" />
-    <state width="1323" height="188" key="GridCell.Tab.0.center" timestamp="1586604679148">
+    <state width="1323" height="188" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1587208950525" />
+    <state width="1323" height="188" key="GridCell.Tab.0.center" timestamp="1587208950525">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1586604679148" />
-    <state width="1323" height="188" key="GridCell.Tab.0.left" timestamp="1586604679148">
+    <state width="1323" height="188" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1587208950525" />
+    <state width="1323" height="188" key="GridCell.Tab.0.left" timestamp="1587208950525">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1586604679148" />
-    <state width="1323" height="188" key="GridCell.Tab.0.right" timestamp="1586604679148">
+    <state width="1323" height="188" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1587208950525" />
+    <state width="1323" height="188" key="GridCell.Tab.0.right" timestamp="1587208950525">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1586604679148" />
+    <state width="1323" height="188" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1587208950525" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1584726450514">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1584726450514" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1586107424008">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1586604869731">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1586107424008" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1586598435339">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1586604869731" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1587201960467">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1586598435339" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1587201960467" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1584269554394">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
