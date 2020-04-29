@@ -6,7 +6,12 @@ import java.util.Scanner;
 
 public class LiczbaSamoglosek {
     public static void main(String[] args) {
-        int licznik = 0;
+        int licznikA = 0;
+        int licznikO = 0;
+        int licznikE = 0;
+        int licznikI = 0;
+        int licznikU = 0;
+        int licznikY = 0;
 
         String text;
         Scanner input = new Scanner(System.in);
@@ -18,19 +23,36 @@ public class LiczbaSamoglosek {
         for (int i = 0; i < text.length() ; i++) {
             switch (text.charAt(i)) {
                 case 'a':
+                    licznikA++;
+                    break;
                 case 'o':
+                    licznikO++;
+                    break;
                 case 'e':
+                    licznikE++;
+                    break;
                 case 'i':
+                    licznikI++;
+                    break;
                 case 'u':
+                    licznikU++;
+                    break;
                 case 'y':
-                    licznik++;
+                    licznikY++;
                     break;
 
                 default:
                     System.out.println(text.charAt(i) + " jest spolgloska");
             }
         }
+        System.out.println();
+        System.out.println("We wprowadzonym tekscie " + "'" + text + "'" + " znaleziono:");
+        System.out.println(licznikA + " samoglosek A");
+        System.out.println(licznikO + " samoglosek O");
+        System.out.println(licznikE + " samoglosek E");
+        System.out.println(licznikI + " samoglosek I");
+        System.out.println(licznikU + " samoglosek U");
+        System.out.println(licznikY + " samoglosek Y");
 
-        System.out.println("We wprowadzonym tekscie " + "'" + text + "'" + " znaleziono " + licznik + " samoglosek");
     }
 }
