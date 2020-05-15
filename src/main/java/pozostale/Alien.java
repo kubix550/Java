@@ -1,3 +1,5 @@
+package pozostale;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -9,7 +11,7 @@ public class Alien {
     private int hp;                          //public means you can access it anywhere while private means you can only access it inside its own class
     private int power;
 
-    public Alien(String name, String weapon, int hp, int power) {           //ustalenie charakterystyki obiektu Alien
+    public Alien(String name, String weapon, int hp, int power) {           //ustalenie charakterystyki obiektu pozostale.Alien
         this.name = name;
         this.weapon = weapon;
         setHp(hp);                                                          //sprawdza
@@ -18,7 +20,7 @@ public class Alien {
 
     @Override
     public String toString() {                                      //constructor
-        return "Alien{" +
+        return "pozostale.Alien{" +
                 "name='" + name + '\'' +
                 ", weapon='" + weapon + '\'' +
                 ", hp=" + hp +
@@ -61,7 +63,7 @@ public class Alien {
     //main
 
     public static void main(String[] args) {
-        Alien alien = new Alien("Bob","gun",100,50);            //konkretny Alien o ustalonych parametrach
+        Alien alien = new Alien("Bob","gun",100,50);            //konkretny pozostale.Alien o ustalonych parametrach
 
         Scanner input = new Scanner(System.in);
 
