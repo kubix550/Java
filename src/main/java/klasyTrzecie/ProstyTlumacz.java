@@ -11,6 +11,7 @@ public class ProstyTlumacz {
         Scanner input = new Scanner(System.in);
         String translateType;
         String translateWord;
+        String znalezioneSlowo = null;
 
         // ustalone przykladowe slowa w hashmapie
         // kluczem w mapie sa slowa polskie
@@ -37,9 +38,18 @@ public class ProstyTlumacz {
 
                     // para.getKey to slowo po polsku, jezeli zgadza sie ze slowem z mapy, zwraca slowo angielskie
                     if (para.getKey().equals(translateWord)) {
-                        System.out.println("ANG: " + para.getValue());
+                        znalezioneSlowo = para.getValue();
                     }
                 }
+
+                // null jest domyslne, jezeli nie znaleziono slowa (reszta jest w hashmapie)
+                if (znalezioneSlowo != null) {
+                    System.out.println("ANG: " + znalezioneSlowo);
+                }
+                else {
+                    System.out.println("Nie znaleziono slowa");
+                }
+
                 break;
             }
 
@@ -51,9 +61,17 @@ public class ProstyTlumacz {
 
                     // para.getValue to slowo po angielsku, jezeli zgadza sie ze slowem z mapy, zwraca slowo polskie
                     if (para.getValue().equals(translateWord)) {
-                        System.out.println("POL: " + para.getKey());
+                        znalezioneSlowo = para.getKey();
                     }
                 }
+
+                if (znalezioneSlowo != null) {
+                    System.out.println("POL: " + znalezioneSlowo);
+                }
+                else {
+                    System.out.println("Nie znaleziono slowa");
+                }
+
                 break;
             }
 
