@@ -81,7 +81,7 @@ public class zadanieCzwarte {
 
     public static void main(String[] args) throws Exception {
         // zwraca od razu liste stringow
-        List<String> lista = Files.readAllLines(Paths.get("C:\\Users\\Kuba\\Desktop\\liczby.txt"));
+        List<String> lista = Files.readAllLines(Paths.get("C:\\Users\\Kuba\\IdeaProjects\\projekt\\src\\main\\java\\matura2020\\liczby.txt"));
 
         System.out.println("Liczb nieparzystych jest: " + ileNieparzystych(lista));
         System.out.println();
@@ -90,7 +90,7 @@ public class zadanieCzwarte {
         System.out.println(sumaJedenascie(lista));
         System.out.println();
 
-        System.out.println("Lista, liczby sa pierwsze z przedzialu 4000-5000 to:");
+        System.out.println("Lista, w ktorej sa liczby sa pierwsze z przedzialu 4000-5000 to:");
         System.out.println(liczbyPierwszePrzedzial(lista));
     }
 }
