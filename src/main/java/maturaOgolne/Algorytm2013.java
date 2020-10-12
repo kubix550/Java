@@ -9,10 +9,10 @@ public class Algorytm2013 {
         int s = 1;
         int p = 1;
 
-        for (int k = 1; k < n ; k++) {
+        for (int k = 1; k <= n ; k++) {             // k bylo mniejsze rowne!
             s = s + p;
 
-            for (int i = 1; i < k ; i++) {
+            for (int i = 1; i <= k ; i++) {
                 p = p * k;
             }
         }
