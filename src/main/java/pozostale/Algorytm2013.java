@@ -1,4 +1,4 @@
-package maturaOgolne;
+package pozostale;
 
 // matura 2013, analiza algorytmu
 
