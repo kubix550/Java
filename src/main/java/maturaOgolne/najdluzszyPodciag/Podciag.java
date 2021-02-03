@@ -33,7 +33,7 @@ public class Podciag {
 //        }
 
         najdluzszyPodciag = dlugoscPodciagu[0];
-        int miejsce = 0;                                        // indeks elementu w drugiej tablicy
+        int miejsce = 0;                                        // indeks najwiekszego elementu w drugiej tablicy
 
         for (int i = 1; i < tablica.length; ++i) {
             if (najdluzszyPodciag < dlugoscPodciagu[i]) {
@@ -48,10 +48,10 @@ public class Podciag {
 
         wynik.add(0, tablica[miejsce]);
 
-        for (int i = miejsce - 1; i >= 0; i--) {
-            if (dlugoscPodciagu[miejsce] == dlugoscPodciagu[i] + 1) {
+        for (int i = miejsce - 1; i >= 0; i--) {                                    // od najwiekszego indeksu idzie od konca w dol, do poczatku tablicy
+            if (dlugoscPodciagu[miejsce] == dlugoscPodciagu[i] + 1) {               // szuka elementu o jeden mniejszego (dlugosc podciagu)
                 wynik.add(0, tablica[i]);
-                miejsce = i;
+                miejsce = i;                                                        // zmieniamy obecny najwiekszy element
             }
         }
 
@@ -62,10 +62,13 @@ public class Podciag {
         List<String> plik = Files.readAllLines(Paths.get("ciagi.txt"));
         for (String string : plik) {                                                // dzieli kazdy wiersz po spacjach
             List<Integer> listaNajdluzszyCiag = new ArrayList<>();
-            int[] tablicaZPliku = Arrays.asList(string.split(" ")).stream().mapToInt(s -> Integer.valueOf(s)).toArray();  // zamienia tablice stringow tablice intow
 
-            System.out.println("Dlugosc podciagu: " + znajdzPodciag(tablicaZPliku, listaNajdluzszyCiag));
-            System.out.println(listaNajdluzszyCiag);
+            if (!string.equals("100")) {                                            // jezeli w wierszu nie ma 100, to przetwarza dalej, bo 100 dla zmylki
+                int[] tablicaZPliku = Arrays.asList(string.split(" ")).stream().mapToInt(s -> Integer.valueOf(s)).toArray();  // zamienia tablice stringow tablice intow
+
+                System.out.println("Dlugosc podciagu: " + znajdzPodciag(tablicaZPliku, listaNajdluzszyCiag));
+                System.out.println(listaNajdluzszyCiag);
+            }
         }
     }
 }
