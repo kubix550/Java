@@ -9,7 +9,6 @@ import java.util.*;
 
 // EGZAMIN MATURALNY Z INFORMATYKI
 // 11 maja 2018 r.
-// todo podpunkt trzeci
 public class ZadanieWEGA {
 
     public static void main(String[] args) throws IOException {
