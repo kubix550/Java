@@ -14,15 +14,15 @@ public class SzyfrCezara {
 
 
             // jezeli przesuniecie bedzie wieksze od 122 (litera z), to wyjdzie poza zakres liter
-            if (kodLitery + przesuniecie > 122) {
+            if (kodLitery + (przesuniecie%26) > 122) {
                 roznica = 122 - kodLitery;
 
                 // wiec do 97 (kod litery a) dodajemy odpowiednie przesuniecie
-                builder.append((char)(97 + ((przesuniecie-1) - roznica)));
+                builder.append((char)(97 + ((przesuniecie%26 - 1) - roznica)));
             }
 
             else {
-                kodLitery = kodLitery + przesuniecie;
+                kodLitery = kodLitery + (przesuniecie%26);
                 builder.append((char) kodLitery);
             }
         }
@@ -33,9 +33,6 @@ public class SzyfrCezara {
 
     public static void main(String[] args) {
         String wyraz = "xyzab";
-        szyfr(wyraz, 5);
-
-        // todo umozliwic wieksze przesuniecie, np o 505
-        // przesuniecie o 30 to tak jakby przesunac o 30%26 (reszta z dzielenia przez 26)
+        szyfr(wyraz, 505);
     }
 }

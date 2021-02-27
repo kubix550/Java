@@ -58,7 +58,7 @@ public class PrzesunieciePalindromu {
         // strumien wyswietla dla kazdego wyrazu ile trzeba przesunac zeby byl palindromem
          strings.stream().filter(a -> ilePrzesunac(a) > -1).forEach(a -> System.out.println(ilePrzesunac(a)));
 
-         // todo
+
 //        List<Integer> liczbaPrzesuniec = strings.stream().filter(a -> ilePrzesunac(a) > -1).collect(Collectors.to);
 //        strings.stream().filter(a -> ilePrzesunac(a) > -1).collect(Collectors.groupingBy(palindromy, liczbaPrzesuniec));
     }
