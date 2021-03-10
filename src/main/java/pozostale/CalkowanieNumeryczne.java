@@ -32,10 +32,8 @@ public class CalkowanieNumeryczne {
 
         for (int i = 0; i < n - 1 ; i++) {
             // oblicza sume wszystkich podstaw trapezow (kreski pionowe)
-            suma = suma + f(a + i * szerokosc);
+            suma = suma + ((f(a+i*szerokosc) + f(a+(i+1)*szerokosc)) * 0.5 * szerokosc);
         }
-
-        suma = (suma + (f(a) + f(b)) / 2) * szerokosc;
 
         return suma;
     }
@@ -43,8 +41,5 @@ public class CalkowanieNumeryczne {
     public static void main(String[] args) {
         System.out.println(metodaProstokatow());
         System.out.println(metodaTrapezow());
-
-        // todo
-        // dokladnosc - np. 0.001, to policzy az osiagnie to od prawdziwej wartosci
     }
 }
