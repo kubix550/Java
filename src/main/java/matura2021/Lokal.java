@@ -32,4 +32,12 @@ public class Lokal {
                 ", szerokosc=" + szerokosc +
                 '}';
     }
+
+    public boolean czyZerowy() {
+        return (szerokosc + dlugosc == 0);
+    }
+
+    public int poleLokalu() {
+        return (szerokosc * dlugosc);
+    }
 }

@@ -3,14 +3,10 @@ package matura2021;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Galerie {
 
-    // na podstawie tego robi sie reszte przykladow
     public static void wyswietlGlownaMape(Map<String, Map<String, List<Lokal>>> glownaMapaGalerii) throws IOException {
 
         for (Map.Entry<String, Map<String, List<Lokal>>> mainEntry : glownaMapaGalerii.entrySet()) {
@@ -24,9 +20,118 @@ public class Galerie {
     }
 
 
+
+    /////////////////////////
+    // ZADANIE 4.1
+    /////////////////////////
+
+    public static Map<String, Integer> liczbaMiast(Map<String, Map<String, List<Lokal>>> mapa) {
+        Map<String, Integer> result = new TreeMap<>();
+
+        for (Map.Entry<String, Map<String, List<Lokal>>> mainEntry : mapa.entrySet()
+             ) {
+
+            String panstwo = mainEntry.getKey();
+            int liczbaMiast = mainEntry.getValue().size();
+
+            result.put(panstwo, liczbaMiast);
+        }
+
+        return result;
+    }
+
+
+
+    /////////////////////////
+    // ZADANIE 4.2 a
+    /////////////////////////
+
+    public static void powierzchniaGalerii(Map<String, Map<String, List<Lokal>>> mapa) {
+
+        for (Map.Entry<String, Map<String, List<Lokal>>> mainEntry : mapa.entrySet()
+             ) {
+
+            for (Map.Entry<String, List<Lokal>> galeria: mainEntry.getValue().entrySet()
+                 ) {
+                String nazwaMiasta = galeria.getKey();
+                int liczbaLokali = listaLokali(galeria.getValue());
+                int sumaPowierzchni = sumaPowierzchni(galeria.getValue());
+
+                System.out.println(nazwaMiasta + " " + sumaPowierzchni + " " + liczbaLokali);
+            }
+        }
+    }
+
+    public static int listaLokali(List<Lokal> lokale) {
+        int result = 0;
+
+        for (Lokal lokal: lokale
+             ) {
+
+            if (!lokal.czyZerowy()) {
+                result++;
+            }
+        }
+
+        return result;
+    }
+
+    public static int sumaPowierzchni(List<Lokal> lokale) {
+        int result = 0;
+
+        for (Lokal lokal: lokale
+             ) {
+            result = result + lokal.poleLokalu();
+        }
+
+        return result;
+    }
+
+
+
+    /////////////////////////
+    // ZADANIE 4.2 b
+    /////////////////////////
+
+    public static void minMaxGalerie(Map<String, Map<String, List<Lokal>>> mapa) {
+        int najmniejszaPowierzchniaGalerii = Integer.MAX_VALUE;
+        String najmniejszeMiasto = "";
+
+        int najwiekszaPowierzchniaGalerii = 0;
+        String najwiekszeMiasto = "";
+
+        for (Map.Entry<String, Map<String, List<Lokal>>> mainEntry : mapa.entrySet()
+        ) {
+
+            for (Map.Entry<String, List<Lokal>> galeria: mainEntry.getValue().entrySet()
+            ) {
+                String nazwaMiasta = galeria.getKey();
+                int sumaPowierzchni = sumaPowierzchni(galeria.getValue());
+
+                if (najmniejszaPowierzchniaGalerii > sumaPowierzchni) {
+                    najmniejszaPowierzchniaGalerii = sumaPowierzchni;
+                    najmniejszeMiasto = nazwaMiasta;
+                }
+
+                if (najwiekszaPowierzchniaGalerii < sumaPowierzchni) {
+                    najwiekszaPowierzchniaGalerii = sumaPowierzchni;
+                    najwiekszeMiasto = nazwaMiasta;
+                }
+            }
+        }
+
+        System.out.println("Najmniejsze: " + najmniejszeMiasto + " " + najmniejszaPowierzchniaGalerii);
+        System.out.println("Najwieksze: " + najwiekszeMiasto + " " + najwiekszaPowierzchniaGalerii);
+    }
+
+
+
+    /////////////////////////
+    // MAIN
+    /////////////////////////
+
     public static void main(String[] args) throws IOException {
         List<String> galeriaZPliku = Files.readAllLines(Paths.get("galerie_przyklad.txt"));
-
 
         // glowna struktura
         Map<String, Map<String, List<Lokal>>> glownaMapaGalerii = new HashMap<>();
@@ -62,8 +167,24 @@ public class Galerie {
             }
         }
 
-        wyswietlGlownaMape(glownaMapaGalerii);
-        // todo zadania
+        // wyswietlGlownaMape(glownaMapaGalerii);
 
+
+        System.out.println("Zadanie 4.1");
+        System.out.println(liczbaMiast(glownaMapaGalerii));
+        System.out.println();
+
+        System.out.println("Zadanie 4.2a");
+        powierzchniaGalerii(glownaMapaGalerii);
+        System.out.println();
+
+        System.out.println("Zadanie 4.2b");
+        minMaxGalerie(glownaMapaGalerii);
+
+        // todo zadanie 4.3
+        // dla kazdego miasta mamy podane powierzchnie lokali
+        // kazda powierzcnie lokali trzeba wrzucic do utworzonego seta
+        // rozne lokale - set bo sie nie powtarza
+        // dac size na koncu (czyli bedzie liczba roznych lokali)
     }
 }
