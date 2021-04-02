@@ -1,5 +1,6 @@
 package matura2021;
 
+import javax.xml.transform.Templates;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -127,6 +128,64 @@ public class Galerie {
 
 
     /////////////////////////
+    // ZADANIE 4.3
+    /////////////////////////
+
+    public static int roznaLiczbaLokali(List<Lokal> lokale) {
+        int result;
+
+        Set<Integer> roznelokale = new TreeSet<>();
+
+        for (Lokal lokal: lokale
+             ) {
+            // sprawdza czy pole nie jest zerem bo wtedy nie istnieje
+            if (lokal.poleLokalu() != 0) {
+                roznelokale.add(lokal.poleLokalu());
+            }
+        }
+
+        result = roznelokale.size();
+
+        return result;
+    }
+
+    public static void rozneRodzajeLokali(Map<String, Map<String, List<Lokal>>> mapa) {
+
+        String galeriaNajwiekszaLiczbaRoznych = "";
+        int najmniejszaIlosc = Integer.MAX_VALUE;
+
+        String galeriaNajmniejszaLiczbaRoznych = "";
+        int najwiekszaIlosc = 0;
+
+        for (Map.Entry<String, Map<String, List<Lokal>>> mainEntry : mapa.entrySet()
+        ) {
+
+            for (Map.Entry<String, List<Lokal>> galeria: mainEntry.getValue().entrySet()
+            ) {
+                String nazwaMiasta = galeria.getKey();
+                int roznaLiczbaLokali = roznaLiczbaLokali(galeria.getValue());
+
+                // max
+                if (roznaLiczbaLokali > najwiekszaIlosc) {
+                    najwiekszaIlosc = roznaLiczbaLokali;
+                    galeriaNajwiekszaLiczbaRoznych = nazwaMiasta;
+                }
+
+                // min
+                if (roznaLiczbaLokali < najmniejszaIlosc) {
+                    najmniejszaIlosc = roznaLiczbaLokali;
+                    galeriaNajmniejszaLiczbaRoznych = nazwaMiasta;
+                }
+            }
+        }
+
+        System.out.println("Najwieksza liczba roznych galerii: " + najwiekszaIlosc + " w " + galeriaNajwiekszaLiczbaRoznych);
+        System.out.println("Najmniejsza liczba roznych galerii: " + najmniejszaIlosc + " w " + galeriaNajmniejszaLiczbaRoznych);
+    }
+
+
+
+    /////////////////////////
     // MAIN
     /////////////////////////
 
@@ -180,11 +239,9 @@ public class Galerie {
 
         System.out.println("Zadanie 4.2b");
         minMaxGalerie(glownaMapaGalerii);
+        System.out.println();
 
-        // todo zadanie 4.3
-        // dla kazdego miasta mamy podane powierzchnie lokali
-        // kazda powierzcnie lokali trzeba wrzucic do utworzonego seta
-        // rozne lokale - set bo sie nie powtarza
-        // dac size na koncu (czyli bedzie liczba roznych lokali)
+        System.out.println("Zadanie 4.3");
+        rozneRodzajeLokali(glownaMapaGalerii);
     }
 }
