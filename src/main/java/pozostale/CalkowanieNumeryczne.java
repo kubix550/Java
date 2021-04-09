@@ -31,7 +31,6 @@ public class CalkowanieNumeryczne {
         double szerokosc = (b-a)/n;
 
         for (int i = 0; i < n - 1 ; i++) {
-            // oblicza sume wszystkich podstaw trapezow (kreski pionowe)
             suma = suma + ((f(a+i*szerokosc) + f(a+(i+1)*szerokosc)) * 0.5 * szerokosc);
         }
 
