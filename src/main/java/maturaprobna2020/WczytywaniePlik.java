@@ -1,4 +1,4 @@
-package matura2020;
+package maturaprobna2020;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,4 +1,4 @@
-package matura2020;
+package maturaprobna2020;
 
 // 1. Podaj, ile liczb nieparzystych zapisano w pliku liczby.txt
 // 2. Spośród liczb występujących w pliku liczby.txt podaj te, których suma cyfr jest równa 11

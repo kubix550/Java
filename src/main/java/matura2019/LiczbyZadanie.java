@@ -87,7 +87,5 @@ public class LiczbyZadanie {
 
         System.out.println("Zadanie 4.2");
         System.out.println(liczbyRowneSumieSilni(listaLiczb));
-
-        // todo 4.3
     }
 }
