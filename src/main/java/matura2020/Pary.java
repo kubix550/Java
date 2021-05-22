@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
@@ -42,11 +43,12 @@ public class Pary {
     /////////////////////
     // ZADANIE 2
     /////////////////////
+    // FIXME: 22.05.2021 dla wyrazu w ktorym kazda litera jest inna
 
     public static void najdluzszyFragment(String wyraz) {
         int aktualnaDlugosc = 1;
         int maksymalnaDlugosc = 1;
-        StringBuilder aktualnyBuilder = new StringBuilder();
+        StringBuilder aktualnyBuilder = new StringBuilder(wyraz.charAt(0)); // trzeba ten wyraz potem usuwac!
         StringBuilder maksymalnyBuilder = new StringBuilder();
 
         for (int i = 1; i < wyraz.length() ; i++) {
@@ -78,25 +80,38 @@ public class Pary {
     /////////////////////
     // ZADANIE 3
     /////////////////////
-    // TODO: 19.05.2021 zadanie trzecie
+    public static PojedynczaPara najmniejszaPara(List<PojedynczaPara> lista) {
 
+        // sort wykorzystuje metode compareTo, ktora zostala stworzona w klasie PojedynczaPara
+        Collections.sort(lista);
 
+        // domyslnie jest rosnaco wiec zwraca pierwszy element
+        return lista.get(0);
+    }
 
     /////////////////////
     // MAIN
     /////////////////////
 
     public static void main(String[] args) throws IOException {
-        List<String> dane = new ArrayList<>(Files.readAllLines(Path.of("przykladPary.txt")));
+        List<String> dane = new ArrayList<>(Files.readAllLines(Path.of("pary2020.txt")));
         List<String> liczbyParzyste = new ArrayList<>();
         List<String> slowa = new ArrayList<>();
+        List<PojedynczaPara> rownePary = new ArrayList<>();
 
         for (String string: dane
              ) {
             String[] s = string.split(" ");
 
+            // TU SPRAWDZA KTORE SA PARZYSTE I DODAJE DO LISTY
             if (Integer.parseInt(s[0])%2 == 0 && Integer.parseInt(s[0]) > 4) {
                 liczbyParzyste.add(s[0]);
+            }
+
+            // TU SPRAWDZA CZY LICZBA JEST ROWNA DLUGOSCI WYRAZU
+            if (Integer.parseInt(s[0]) == s[1].length()) {
+                PojedynczaPara pojedynczaPara = new PojedynczaPara(Integer.parseInt(s[0]), s[1]);
+                rownePary.add(pojedynczaPara);
             }
         }
 
@@ -127,5 +142,14 @@ public class Pary {
         for (int i = 0; i < slowa.size() ; i++) {
             najdluzszyFragment(slowa.get(i));
         }
+        System.out.println();
+
+
+        /////////////////////
+        // ZADANIE 3 - WYNIK
+        /////////////////////
+
+        System.out.println("ZADANIE 3");
+        System.out.println(najmniejszaPara(rownePary));
     }
 }
