@@ -1,4 +1,4 @@
-package matura2021;
+package maturaprobna2021;
 
 public class Lokal {
     int dlugosc;

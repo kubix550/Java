@@ -51,7 +51,7 @@ public class Pary {
         StringBuilder aktualnyBuilder = new StringBuilder(wyraz.charAt(0)); // trzeba ten wyraz potem usuwac!
         StringBuilder maksymalnyBuilder = new StringBuilder();
 
-        for (int i = 1; i < wyraz.length() ; i++) {
+        for (int i = 1; i <= wyraz.length() ; i++) {
             if (wyraz.charAt(i) == wyraz.charAt(i-1)) {
                 aktualnaDlugosc++;
                 aktualnyBuilder.append(wyraz.charAt(i));
