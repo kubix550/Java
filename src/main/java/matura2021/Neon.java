@@ -14,8 +14,8 @@ public class Neon {
     public static int dlugoscNapisu(List<String> lista) {
         int result = 0;
 
-        for (String item: lista
-             ) {
+        for (String item : lista
+        ) {
             String[] s = item.split(" ");
 
             if (s[0].equals("DOPISZ")) {
@@ -30,7 +30,6 @@ public class Neon {
     }
 
 
-
     /////////////////////
     // ZADANIE 2
     /////////////////////
@@ -41,19 +40,18 @@ public class Neon {
         String aktualnaInstrukcja = "";
         String najwiekszaInstrukcja = "";
 
-        for (String item: lista
+        for (String item : lista
         ) {
             String[] s = item.split(" ");
             instrukcje.add(s[0]);
         }
 
 
-        for (int i = 1; i < instrukcje.size() ; i++) {
-            if (instrukcje.get(i).equals(instrukcje.get(i-1))) {
+        for (int i = 1; i < instrukcje.size(); i++) {
+            if (instrukcje.get(i).equals(instrukcje.get(i - 1))) {
                 aktualnaDlugosc++;
                 aktualnaInstrukcja = instrukcje.get(i);
-            }
-            else {
+            } else {
                 if (aktualnaDlugosc > najwiekszaDlugosc) {
                     najwiekszaDlugosc = aktualnaDlugosc;
                     najwiekszaInstrukcja = aktualnaInstrukcja;
@@ -68,7 +66,6 @@ public class Neon {
     }
 
 
-
     /////////////////////
     // ZADANIE 3
     /////////////////////
@@ -81,7 +78,7 @@ public class Neon {
         int najczeszeWystepowanie = 0;
 
 
-        for (String item: lista
+        for (String item : lista
         ) {
             String[] s = item.split(" ");
 
@@ -92,8 +89,8 @@ public class Neon {
         }
 
 
-        for (String item: literyNiepowtarzajace
-             ) {
+        for (String item : literyNiepowtarzajace
+        ) {
             aktualneWystepowanie = Collections.frequency(litery, item);
             aktualnaLitera = item;
 
@@ -107,10 +104,8 @@ public class Neon {
     }
 
 
-
     /////////////////////
     // ZADANIE 4
-    // TODO: 30.05.2021 dokonczyc zadanie
     /////////////////////
 
     // na końcu napisu trzeba dopisać pojedynczą litere
@@ -141,9 +136,66 @@ public class Neon {
     // pierwsze od lewej wystąpienie podanej litery w napisie należy zamienić na następną literę w alfabecie
     // jeśli litera nie występuje w napisie, nie należy nic robić
     public static String przesun(String wyraz, String litera) {
+        StringBuilder builder = new StringBuilder(wyraz);
+        char literaChar = litera.charAt(0);
 
-        return "";
+        // jezeli litera nie wystepuje w wyrazie to nic nie zwraca
+        if (!wyraz.contains(litera)) {
+            return builder.toString();
+        }
+
+        for (int i = 0; i < wyraz.length(); i++) {
+
+            // sprawdza czy konkretna litera wyrazu rowna jest podanej
+            if (literaChar == (int) wyraz.charAt(i)) {
+
+                // jezeli podana jest "Z" to musi wrocic spowrotem do "A"
+                if (literaChar == 'Z') {
+                    builder.setCharAt(i, 'A');
+                    break;
+                }
+
+                // jak jest inna to normalnie zamienia na nastepna
+                else {
+                    builder.setCharAt(i, (char) (wyraz.charAt(i) + 1));
+                    break;
+                }
+            }
+        }
+
+        return builder.toString();
     }
+
+    public static String utworzNapis(List<String> lista) {
+        String napis = "";
+
+        for (String item : lista
+        ) {
+            String[] s = item.split(" ");
+
+            switch (s[0]) {
+                case "DOPISZ": {
+                    napis = dopisz(napis, s[1]);
+                    break;
+                }
+                case "ZMIEN": {
+                    napis = zmien(napis, s[1]);
+                    break;
+                }
+                case "USUN": {
+                    napis = usun(napis);
+                    break;
+                }
+                case "PRZESUN": {
+                    napis = przesun(napis, s[1]);
+                    break;
+                }
+            }
+        }
+
+        return napis;
+    }
+
 
 
     /////////////////////
@@ -181,9 +233,6 @@ public class Neon {
         // ZADANIE 4 - WYNIK
         /////////////////////
         System.out.println("Zadanie 4");
-        String test = "MATURA";
-        System.out.println(dopisz(test, "Q"));
-        System.out.println(zmien(test, "X"));
-        System.out.println(usun(test));
+        System.out.println(utworzNapis(dane));
     }
 }
