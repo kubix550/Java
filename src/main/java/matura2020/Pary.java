@@ -43,15 +43,17 @@ public class Pary {
     /////////////////////
     // ZADANIE 2
     /////////////////////
-    // FIXME: 22.05.2021 dla wyrazu w ktorym kazda litera jest inna
+    // FIXME: 5.06.2021 wyswietlanie ciagu znakow dla wyrazu w ktorym kazda litera jest inna
 
     public static void najdluzszyFragment(String wyraz) {
         int aktualnaDlugosc = 1;
         int maksymalnaDlugosc = 1;
-        StringBuilder aktualnyBuilder = new StringBuilder(wyraz.charAt(0)); // trzeba ten wyraz potem usuwac!
+        StringBuilder aktualnyBuilder = new StringBuilder(); // trzeba ten wyraz potem usuwac!
         StringBuilder maksymalnyBuilder = new StringBuilder();
 
-        for (int i = 1; i <= wyraz.length() ; i++) {
+
+        int i = 1;
+        while (i < wyraz.length()) {
             if (wyraz.charAt(i) == wyraz.charAt(i-1)) {
                 aktualnaDlugosc++;
                 aktualnyBuilder.append(wyraz.charAt(i));
@@ -68,6 +70,8 @@ public class Pary {
                 // czysci aktualny stringbuilder do nastepnego przejscia
                 aktualnyBuilder = new StringBuilder("");
             }
+
+            i++;
         }
 
         // dlugosc ciagu jest krotsza o jeden numer i litere, wiec jest dodawana tutaj
